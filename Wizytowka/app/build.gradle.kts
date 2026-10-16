@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "pl.merito.nikodemscibiorski.wizytowka"
+    namespace = "pl.merito.nikodemscibiorski"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "pl.merito.nikodemscibiorski.wizytowka"
+        applicationId = "pl.merito.nikodemscibiorski"
         minSdk = 26
         targetSdk = 37
         versionCode = 1
@@ -22,7 +22,8 @@ android {
     buildTypes {
         release {
             optimization {
-                enable = false
+                enable = true
+                packageScope = setOf("androidx.**", "kotlin.**", "kotlinx.**")
             }
         }
     }

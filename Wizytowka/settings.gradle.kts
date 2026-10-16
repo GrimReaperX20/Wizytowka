@@ -22,5 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Wizytowka"
+rootProject.name = "My Application"
 include(":app")
+ 
